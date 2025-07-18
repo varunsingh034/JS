@@ -289,9 +289,336 @@
 // let b = {} , b instanceof array === ture
 
 
+//////////  if else else if
+
+// if (){
+
+// }
+// else if(){
+
+// }
+// else if(){
+
+// }
+
+// else{
+    
+// }
+
+
+////////// switch case
+
+// switch(val){
+//     case 1:
+//         break;
+//     case 2:
+//         break;
+//     case 3:
+//         break;
+//     default:
+//         break;
+// }
+
+
+////////// early return pattern
+
+
+// function getVal(val){
+//     if(val) return 'A';
+//     else return 'B';
+// }
 
 
 
+////////////// loops
+
+//// for while do...while
+
+// / for loop
+
+// 1 --- 1000
+
+// for (start ; end ; change ){
+    
+// }
+
+// for ( let i = 0 ; i < 10 ; i++){
+//     console.log(i);
+
+    
+// }
+
+
+//////// while 
+
+
+// start 
+// while ( condition ){
+//      change 
+// }
+
+// let i = 1;
+// while(i<32){
+//     console.log(i);
+//     i++;
+// }
+
+
+////// break 
+
+// for ( let i = 1 ; i <6 ; i ++ ){
+//     console.log(i);
+//     if (i == 3) break;
+    
+// }
+
+///// continue 
+
+
+
+// for ( let i = 1 ; i <6 ; i ++ ){
+//     if (i === 3 ){
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+//////// print num from 1 to 10 
+
+// for (let i = 1; i <=10 ; i++) console.log(i);
+
+//// print num from 10 to 1 
+
+// for ( let i  = 10 ; 1 <= i ; i-- ) console.log(i);
+
+//////// print even num from 1 to 20 
+
+// for (let i = 1; 20 >= i ; i++ ) if(i%2 === 0) console.log(i);
+
+///////// print odd num from1 to 15 ( while )
+
+// let i = 1;
+// while(15 >= i){
+//     if(i%2 !== 0) console.log(i);
+//     i++;   
+// }
+
+
+////// print the multiplication table of 5 ( 5x1 = 1  .......  5x10 = 50 )
+
+
+// for ( let i = 1; i<10 ; i++){
+//     console.log(`5 X ${i} = ${5*i}`);
+// }
+
+
+///////// print the sum of num 1 form 100
+// let sum = 0;
+// for ( let i = 0; i <= 100; i++){
+//     sum += i;
+// }
+// console.log(sum);
+
+
+//////// print all num between 1 to 50 divisible by 3
+
+// for ( let i = 0; i<=50; i++){
+//     if(i%3 === 0) console.log(i);
+    
+// }
+
+//////// ask user for a number and print each num from 1 to that num is even of odd
+
+// let val = Number(prompt('Enter a Num'));
+// for (let i = 1; i <= val; i++){
+//     if(i%2 === 0) console.log(`${i} is even`);
+//     else console.log(`${i} is odd`);
+    
+// }
+
+
+//// print how many num are div by 3 and 5 both between 1 to 100
+
+// for ( let i = 1 ; i<= 100; i++){
+//     if(i%3 === 0 && i%5 === 0 ) console.log(i);
+// }
+
+
+////////  stop at first multiple of 7
+
+// for ( let i = 1; i<= 100 ; i++){
+//     console.log(i);
+//     if ( i % 7 === 0) break;
+// }
+
+///////// skip multiple of 3
+
+// for ( let i= 1; i< 30 ; i++){
+//     if(i%3 === 0) continue;
+//     console.log(i);
+    
+// }
+
+/////////// print first finve odd numbers
+
+
+// count = 0
+// for ( let i = 1;i<100 ; i++){
+//     if(i%2 !== 0 ) {
+//         console.log(i);
+//         count++;
+//     }
+//     if(count === 5){
+//         break;
+//     }
+// }
+
+
+///////////// functions
+
+// function lolo(){
+// }
+
+// let fnc = function (){
+    // console.log('herwerf');
+// }
+
+// let fnc = () => {
+// }
+
+/////// jab argument kai saare ho to humein utne hi parameter banane padege, issey bachne ke liye , hum rest ka use karte h ... agar function ke parameter space mein lage to wo rest operator hai and agar wo arra 
+// function abc(...val){
+//     console.log(val);
+    
+// }
+// abc()
+
+
+///////// early return
+
+// function abcd(){
+//     return 235;
+// }
+// console.log(abcd());
+
+
+///////// first clss fnc --> fnc ko values ki tarah treat kar sakte ho
+
+// function abc(val){
+//     val();
+// }
+// abc(function(){
+//     console.log('hello');
+// });
+
+//////////// higher order functions ----> wo jo return kare ek function or accept kare ek function apne parameter me 
+// function abc(){
+//     return function(){
+//         console.log(i);
+//     }
+// }
+// abc()()
+
+
+////// pure fnc and inpure fnc
+/// aiss fnc jo ki bahar ki value ko naa badale wo hai pure fnc
+
+// let a = 12;
+// function abc(){
+//     console.log('hehehe');
+// }
+
+
+/// aiss fnc ho ki bahar ki value ko badal de wo impure fnc h
+
+// function abc(){
+//     a++
+// }
+
+
+//////////// closures -> ek fnc jo return kare ek aur fnc aur return hone wale fnc humesha use kare parent fnc ka koi variable
+// function abc(){
+//     let a = 12;
+//     return function(){
+//         console.log(a);
+//     }
+// }
+
+
+
+/////// lexical scoping
+
+// function ab(){
+//     let a;
+//     function de(){
+//         let b;
+//         functiongh(){
+//             let c;
+//         }
+//     }
+// }
+
+
+///////// IIFE - imediatly invoke fun. expression
+// (function(){
+// })();
+
+
+/////// hoisting differernc 
+
+// abc()
+
+
+// function abc(){
+//     console.log('he');
+// }
+
+/////// what the differece bitween func decla. and expression in terms of hoisting
+
+// abc()
+
+
+//  let abc = function (){
+//     console.log('he');
+// }
+// greet();
+// function greet(){
+//     console.log('hello');
+
+// }
+
+
+// let mul = (a,b) => {
+//     return a*b;
+// }
+
+////// use rest parameter to accept any num of scores ans return the total.
+
+// function getScore(...scores){
+//     let total = 0;
+//     scores.forEach(function(val){
+//         total = total +val
+//     })
+//     return total;
+// console.log(getScore(1,2,4,4,4));
+// }
+
+/////////////// bmi calculator 
+
+// function bmi(weight,height){
+//      return (weight / (height * height))
+// }
+// console.log(bmi(85,1.8).toFixed(2));
+
+
+///////// discount calculator
+// function discal(discount){
+//     return function(price){
+//         return price - price * (discount/100);
+//     }
+// }
+// let discounter = discal(10);
+// console.log(discounter(200));
 
 
 
