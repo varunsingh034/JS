@@ -621,12 +621,108 @@
 // console.log(discounter(200));
 
 
+///////////////////  Array
+
+// creation of arr
+// let arr = new Array();
+
+// let arr = [1,2,30,40,5];
+// arr[4]
 
 
+// modify
+// arr[4] = 34;
 
 
+// methods
+// arr.push(7000)) insertt at end
+// arr.pop()  remove from end
+// arr.shift() remove from start
+// arr.splice(2,1) (where, how much) values to remove
+// arr.slice(2,1) return a new copy of arr with specific size (start , end)
+// arr.reverse()
+
+// arr.sort(function(a,c){
+// return a-b })   a-b for ascending and b-a for descending
+
+// arr.forEach(function(val){
+//     (val+5)
+// })                itrat through all elements
+
+///// map srf tab use karna h jab ek nya array banana h pichle arr ke data ke base pa
+
+// map dikhte hi daath mnm mein ek black array bana liya karo
+
+// let newarr = arr.map(function(val){
+//     if(val>10) return val;
+// })
+
+// jab bhi esa case mile jb koi naya array banega
+
+// arr.filter(function(val){
+//     return 'true or false'
+// })                           return only true or false and fnc return ahte val
 
 
+// let newarr = arr.reduce(function(accumulator,val){
+//     return accumulator + val;
+// })           
+
+// let arr = [
+//     {id:2,key:2},
+//     {id:1,key:1},
+//     {id:3,key:3}
+// ]
+
+// let newarr = arr.find(function(val){
+//     return val == 1;
+// })
+
+
+// let any = arr.some(function(val){
+//     return val>85;
+// })
+
+// let all = arr.every(function(val){
+//     return val>5;
+// })
+
+// let [a,b] = [1,2,3,4,5];
+// console.log(a,b);
+
+// let arr = [1,2,3,4,5,6,7,8,9,10]
+// let ar2 = [...arr]          sprreding
+
+
+// let fruti = ['Apple','Banana','Mango','Pineapple']
+// fruti.push('Kiwi')
+// fruti.pop()
+// fruti.unshift('Orange')
+
+
+// let arr = [1,2,3,4,5,6,7,8,9,10]
+// let narr = arr.map(function(val){
+//     return val*val;
+// })
+
+
+// let arr = [10,43,56,23,5,8,23]
+// let narr = arr.filter((val)=>{
+//     return val>10;
+// })
+
+///////// objects  
+
+// key and value 
+
+// let obj = {
+//     name: 'varu',
+//     age: 34,
+//     kahana: 'dal'
+// }
+
+
+ 
 
 
 
