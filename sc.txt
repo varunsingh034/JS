@@ -1,0 +1,99 @@
+
+/////// mouse  
+
+let abc = document.querySelector("#abc")
+
+
+
+window.addEventListener("mousemove",function(dets){
+    console.log(dets.clientX,dets.clientY);
+    
+    abc.style.top = dets.clientY + "px";
+    abc.style.left = dets.clientX + "px";
+
+
+
+})
+
+
+
+///////////// button 
+
+
+
+let button = document.querySelector("#button")
+let file = document.querySelector("#fileinp")
+
+button.addEventListener("click", function (){
+    file.click()
+})
+
+file.addEventListener("change",function(det){
+    const filename = det.target.files[0]
+    if (filename){
+        button.textContent = filename.name
+    }
+    else{
+        button.textContent = "Upload File"
+    }
+})
+
+
+
+
+////////// mouse hover color
+
+
+
+let abc = document.querySelector("#abc")
+
+abc.addEventListener("mouseover", function(dets){
+    abc.style.backgroundColor = "yellow";
+})
+
+abc.addEventListener("mouseout", function(dets){
+    abc.style.backgroundColor = "red";
+})
+
+
+
+
+///////////// profile
+
+
+
+let form = document.querySelector("form")
+let inputs = document.querySelectorAll("input")
+let main = document.querySelector("#main")
+
+form.addEventListener("submit", function(dets){
+    dets.preventDefault();
+    
+    let card = document.createElement("div")
+    card.classList.add("card")
+    let profile = document.createElement("div")
+    profile.classList.add("profile")
+    let img = document.createElement("img")
+    img.setAttribute(
+        "src",
+        inputs[0].value
+    );
+     let h3 = document.createElement("h3")
+    h3.textContent = inputs[1].value
+    let h5 = document.createElement("h5")
+    h5.textContent = inputs[2].value
+
+    let p = document.createElement("p")
+    p.textContent = inputs[3].value
+    profile.appendChild(img)
+    card.appendChild(profile)
+    card.appendChild(h3)
+    card.appendChild(h5)
+    card.appendChild(p)
+    main.appendChild(card)
+    inputs.forEach(function(inp){
+        if(inp.type !== "submit"){
+            inp.value = ''
+        }
+    })
+})
