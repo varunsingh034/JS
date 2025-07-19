@@ -1,4 +1,8 @@
-mouse <!DOCTYPE html>
+////////////////mouse
+
+
+
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,6 +34,68 @@ mouse <!DOCTYPE html>
 
     </div>
 
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+////////////////// button 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body{
+            font-family: 'Roboto', sans-serif;
+        }
+        #main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+        input{
+            display: none;
+        }
+
+        #button{
+            padding: 15px 25px;
+            background-color: #9a30f7;
+            color: aliceblue;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        #button:hover{
+            background: #69cdff;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="main">
+        <input id="fileinp" type="file" >
+        <div id="button">
+            Upload File
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
